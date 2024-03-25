@@ -93,6 +93,6 @@ curl -s -L -X POST "$HOST/webapi/entry.cgi?api=SYNO.FileStation.Upload&method=up
         -F "sharing_id=\"$SHARING_ID\"" \
         -F "uploader_name=\"$UPLOADER_NAME\"" \
         -F "size=\"$FILE_SIZE\"" \
-        -F "file=@\"$FILE\"" > /dev/null
+        -F "file=@\"$FILE\""
 
 rm -f /tmp/syno_file_upload_cookies
